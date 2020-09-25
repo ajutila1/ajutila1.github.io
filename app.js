@@ -2,7 +2,7 @@
 function graphs(id) {
 
     // Import data from json file
-    d3.json("https://github.com/ajutila1/Plot.ly-Challenge/blob/master/data/samples.json").then((importedData) => {
+    d3.json("./data/samples.json").then((importedData) => {
         console.log(importedData);
 
         // Filter to get specific ID
@@ -67,7 +67,7 @@ function graphs(id) {
 function demographicInfo(id) {
 
     // Import data from json file
-    d3.json("https://github.com/ajutila1/Plot.ly-Challenge/blob/master/data/samples.json").then((importedData) => {
+    d3.json("./data/samples.json").then((importedData) => {
 
         // Collect the metadata from json data
         var rawData = importedData.metadata;
@@ -102,7 +102,7 @@ function init() {
     var dataSelect = d3.select("#selDataset");
 
     // Import data from json file 
-    d3.json("https://github.com/ajutila1/Plot.ly-Challenge/blob/master/data/samples.json").then((importedData) => {
+    d3.json("./data/samples.json").then((importedData) => {
         console.log(importedData);
 
         // Display IDs in dropdown menu
